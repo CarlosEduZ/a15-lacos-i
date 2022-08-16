@@ -1,9 +1,9 @@
-let coxinha = Number(prompt("Você quer comer mais coxinhas? \n 1 para Sim \n 2 para Não."))
+let coxinha = prompt("Você quer comer mais coxinhas? \n S para Sim \n N para Não.").toUpperCase()
 let conta = 0 
 let preco = 2.50
 
-while(coxinha !== 2){
+while(coxinha !== `N`){
     conta += preco
-    coxinha = Number(prompt("Você quer comer mais coxinhas? \n 1 para Sim \n 2 para Não."))
+    coxinha = prompt("Você quer comer mais coxinhas? \n S para Sim \n N para Não.").toUpperCase()
 }
 alert(`A conta custou um total de ${conta}`)
